@@ -391,6 +391,71 @@
   max-width: 560px;
 }
 
+/* ── Award Banner ── */
+.award-banner {
+  margin-top: 48px;
+  border: 1px solid var(--gold-dim);
+  background: linear-gradient(135deg, rgba(201,169,110,0.06) 0%, rgba(201,169,110,0.02) 100%);
+  padding: 40px 48px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.award-icon {
+  flex-shrink: 0;
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+.award-body { flex: 1; min-width: 0; }
+.award-label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-family: var(--font-mono);
+  margin-bottom: 10px;
+}
+.award-title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+.award-desc {
+  font-size: 14px;
+  color: var(--gray-light);
+  line-height: 1.7;
+  font-family: var(--font-pretendard);
+}
+.award-desc strong { color: var(--white); font-weight: 400; }
+.award-year {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 20px 28px;
+  border: 1px solid var(--gold-dim);
+}
+.award-year-num {
+  font-family: var(--font-display);
+  font-size: 40px;
+  color: var(--gold);
+  line-height: 1;
+}
+.award-year-tag {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gray-light);
+  font-family: var(--font-mono);
+  margin-top: 4px;
+}
+
 /* ── Responsive ── */
 @media (max-width: 1024px) {
   .imc-pillars { grid-template-columns: 1fr 1fr; }
@@ -401,4 +466,29 @@
   .imc-film-frame { width: 260px; }
   .imc-timeline { padding-left: 24px; }
   .imc-timeline-item { padding-left: 28px; }
+
+  .award-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    gap: 20px;
+  }
+  .award-icon {
+    width: 52px; height: 52px;
+    font-size: 22px;
+  }
+  .award-title { font-size: 18px; }
+  .award-year {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 20px;
+  }
+  .award-year-num { font-size: 28px; }
+}
+@media (max-width: 480px) {
+  .award-banner { padding: 20px 16px; gap: 16px; }
+  .award-title { font-size: 16px; }
+  .award-desc { font-size: 13px; }
 }

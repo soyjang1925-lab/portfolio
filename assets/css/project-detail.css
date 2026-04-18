@@ -87,11 +87,11 @@
 }
 
 .detail-hero-title {
-  font-family: var(--font-serif);
-  font-size: clamp(48px, 6vw, 100px);
-  font-weight: 900;
+  font-family: var(--font-display);
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 700;
   line-height: 1.0;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   margin-bottom: 40px;
 }
 .detail-hero-title em {
@@ -192,11 +192,11 @@
   margin-bottom: 20px;
 }
 .detail-section-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-mono);
   font-size: clamp(32px, 3vw, 52px);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   margin-bottom: 28px;
 }
 .detail-section-title em { font-style: italic; color: var(--gold); }

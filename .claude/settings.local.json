@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(powershell -command ' *)"
+      "Bash(powershell -command ' *)",
+      "WebFetch(domain:cdn.simpleicons.org)",
+      "WebFetch(domain:simpleicons.org)",
+      "WebSearch"
     ]
   }
 }

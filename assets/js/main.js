@@ -86,7 +86,6 @@ $(function () {
         .from('.hero-desc',   { y: 30, opacity: 0, duration: 0.8 }, 0.8)
         .from('.hero-cta',    { y: 30, opacity: 0, duration: 0.7 }, 1.0)
         .from('.hero-frame',  { x: 60, opacity: 0, duration: 1.0 }, 0.6)
-        .from('.hero-stat',   { x: 40, opacity: 0, duration: 0.7 }, 0.9)
         .from('.hero-badge',  { scale: 0, opacity: 0, duration: 0.6, ease: 'back.out(1.7)' }, 1.1)
         .from('.hero-scroll', { y: 20, opacity: 0, duration: 0.6 }, 1.3);
     }
